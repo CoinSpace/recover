@@ -11,6 +11,12 @@ module.exports = {
     ]
   },
   chainWebpack: (config) => {
+    config.optimization.minimizer('terser').tap(args => {
+      const { terserOptions } = args[0];
+      terserOptions.mangle.reserved = ['BigInteger'];
+      return args;
+    });
+
     const svgRule = config.module.rule('svg');
 
     svgRule.uses.clear();
