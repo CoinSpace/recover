@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <b-container class="app-container">
-      <div class="py-5 text-center">
+      <div class="my-5 text-center">
         <Logo class="d-block mx-auto mb-4" width="128" />
         <h2>Recovery Tool</h2>
         <p class="lead">Recover missing funds from v2.19.0 (P2SH, Bech32).</p>
@@ -72,9 +72,9 @@
           </b-form>
         </b-col>
       </b-row>
-      <footer class="my-5 pt-5 text-center text-small">
-        <a href="https://www.coin.space" target="_blank" rel="noopener" class="text-body text-decoration-none">
-          Copyright CoinSpace © 2020
+      <footer class="my-5 text-center text-small">
+        <a href="https://coin.space" target="_blank" rel="noopener" class="text-body text-decoration-none">
+          Copyright CoinSpace © 2021
           <br>
           All Rights Reserved
         </a>
